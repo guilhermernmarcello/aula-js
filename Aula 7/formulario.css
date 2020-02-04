@@ -1,0 +1,29 @@
+body{
+    background: grey;
+}
+
+form{
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 900px;
+    font-size: 50px;
+}
+
+.titulo{
+    text-align: center;
+    color: white
+}
+
+label{
+    text-align: left;
+}
+.butao{
+    text-align: left;
+    font-size: 20px
+
+}
+

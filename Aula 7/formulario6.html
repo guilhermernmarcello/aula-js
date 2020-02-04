@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8"> 
+        <link href="estilos/estilos.css" rel="stylesheet">    
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <hr>
+         <fieldset>
+
+                    <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome</label>
+                <input name="nome" id="nome" maxlength="10">
+
+                    <label for="endereco">Endereco</label>
+                    <input name="endereco" class="campo-padrao" id="endereco">
+
+
+                    <label for="cidade">cidade</label>
+                    <input name="cidade" class="campo-padrao" id="cidade">
+
+                <label for="uf">Estado</label>
+                <select name="uf" id="uf" class="campo-padrao">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ" selected>Rio de janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </select>
+
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>Natureza do Cargo</label><br>
+                <label for="gerente"> <input type="radio" id="gerente" name="gerente" value="sim">Gerencia</label>
+                
+                <label for="financeiro"> <input type="radio" id="finaceiro" name="financeiro" value="Financeiro">Financeiro</label>
+
+                <label for="rec"> <input type="radio" id="rec" name="rec" value="recepcao">Recepção</label>
+
+                <label for="adm"> <input type="radio" id="adm" name="adm" value="adm">Administrativo</label>
+
+                <label for="jud"> <input type="radio" id="jud" name="jud" value="jud">Juridico</label><br>
+
+
+
+
+
+                <label>Área de interesse</label><br>
+
+                <label for="comp"> <input type="radio" id="comp" name="comp" value="comp">Computação</label>
+                
+                <label for="bio"> <input type="radio" id="bio" name="bio" value="bio">Biologia</label>
+
+                <label for="amb"> <input type="radio" id="amb" name="amb" value="amb">Meio Ambiente</label>
+
+                <label for="eng"> <input type="radio" id="eng" name="eng" value="eng">Engenharia</label>
+
+                <label for="hist"> <input type="radio" id="hist" name="hist" value="jud">Historia</label>
+
+                <label for="curriculo">Mini-currículo:</label><br>
+            <textarea id="curriculo"></textarea><br>
+         </fieldset>
+
+        <input type="submit" value="Enviar" class="botao">
+        <input  type="reset" value="Limpar" class="botao">
+        </form>
+
+    </body>
+</html>

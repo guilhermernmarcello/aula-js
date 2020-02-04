@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formularios</title>
+        <meta charset="UTF-8"> 
+        <link href="estilos/estilos.css" rel="stylesheet">    
+    </head>
+    <body>
+        <h1> Trabalhando com formularios</h1>
+        <hr>
+        <form name="form-cadastro" id="form-cadastro" action="cadastrar-clientes.php" method="POST">
+            <label for="nome-e-sobrenome">Gustavo Gomes</label>
+            <input name="nome-e-sobrenome" id="nome-e-sobrenome" class="campo-padrao" required>
+            <label for="senha">Senha:</label>
+            <input name="senha" id="senha" type="password" class="campo-padrao" maxlength="10" required>
+
+            <fieldset>
+
+                    <legend>Informações de endereço</legend>
+
+                <label for="cep">cep</label>
+                <input name="cep" id="cep" class="campo-padrao" maxlength="10" placeholder="xx.xxx-xxx">
+
+                    <label for="endereco">endereco</label>
+                    <input name="endereco" class="campo-padrao" id="endereco">
+
+                <label for="bairro">Bairro</label>
+                <input name="bairro" class="campo-padrao" id="bairro">
+
+                    <label for="cidade">cidade</label>
+                    <input name="cidade" class="campo-padrao" id="cidade">
+
+                <label for="uf">estado</label>
+                <select name="uf" id="uf" class="campo-padrao">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ" selected>Rio de janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de contato</legend>
+                <label for="email">E-mail</label> 
+                <input name="email" id="email" class="campo-padrao" placeholder="grtisolucoes@gmail.com">
+                <label for="telefone">telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="campo-padrao" placeholder="(xx) xxxxxxxxx" maxlength="20">
+                <label for="celular">celular</label>
+                <input type="tel" name="celular" id="celular" class="campo-padrao" placeholder="(xx) xxxxxxxxx" maxlength="20">
+            </fieldset>
+
+            <fieldset>
+                <legend>informações pessoais</legend>
+                <label for="nascimento">data de nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="campo-padrao">
+                <label for="filhos">filhos</label>
+                <input type="number" min="0" max="10" name="filhos" id="folhos" class="campo-padrao">
+            </fieldset>
+
+            <fieldset>
+                <legend>é fumante</legend>
+                <label for="fumante-sim"> <input type="radio" id="fumante-sim" name="fumante" value="sim">sim</label>
+                
+                <label for="fumante-nao"> <input type="radio" id="fumante-nao" name="fumante" value="nao">nao</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <label for="obs">observação</label>
+                <textarea name="obs" id="obs" class="campo-padrao"></textarea>
+                <label for="ciente"> <input type="checkbox" name="ciente" id="ciente" required> estou ciente das informaçoes encima</label>
+                <input type="submit" class="botao">
+                <input type="reset" value="limpar" class="botao">
+            </fieldset>
+
+
+            <input type="submit" value="send" class="botao">
+            <input  type="reset" value="to clean" class="botao">
+        </form>
+
+    </body>
+</html>
