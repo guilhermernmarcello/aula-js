@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <h1 class="titulo">Cadastro de Clientes</h1>
+    <div id="form">
+
+    <form  name="formulario-contato" action="enviar*=-email.php" method="POST"><br>
+        <label for="nome">Nome:</label>
+        <input id="nome">
+
+        <label for="telefone">Telefone:</label>
+        <input id="telefone">
+
+        <label for="email">Email:</label>
+        <input id="email">
+
+        <button onclick="CadastrarClientes();" id="botao" type="button">Cadastrar</button>
+    </form>
+
+    <p class="mensagem"></p>
+
+    <div>
+        <table class="lista-clientes">
+        <tr>
+            <td>Nome</td>
+            <td>Telefone</td>
+            <td>Email</td>
+        </tr>
+    </table>
+        <script src="funcoes.js"></script>
+    </div>
+
+    </div>  
+    
+</body>
+</html>
